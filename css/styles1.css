@@ -1,0 +1,166 @@
+/* @media screen AND (max-width:600px){ */
+body{
+    display:block;
+    margin: 0;
+    /* max-width: 500px;  */
+    font-family: Helvetica, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(250, 245, 245);
+}
+h1,h2,h3{
+    text-align: center;
+}
+p,ul{
+    padding: auto 20px;
+}
+header{
+
+    text-align: center;
+}
+ header h1{ 
+     color:rgb(168, 106, 168)
+} 
+header nav{
+       
+    background-color: black;
+}
+nav a{
+    display: block;
+    text-align: center;
+    margin: 6px auto 0;
+    text-decoration: none;
+    padding: 5px ;
+}
+a:link,  a:visited{
+    color: rgb(250, 245, 245);
+    
+}
+a:hover{
+    color: rgb(182, 117, 243);
+}
+article{
+    background-color: rgb(233, 66, 99);
+    padding: 20px 5px;
+}
+article h2{
+    padding: 0px;
+}
+aside{
+    background-color: rgb(182, 117, 243);
+    padding: 20px 5px;
+}
+img{
+    width: 100%;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* ******* 500 px *********/
+/* ******* 500 px *********/
+/* ******* 500 px *********/
+@media screen AND (min-width:500px) {
+    /* body{
+        viewport-fit: 1;
+    } */
+    nav{
+        display:flex;
+    }
+    header h1{
+        text-align: left;
+        margin-bottom: 0;
+        padding:  10px;
+    }
+    aside{
+        padding-bottom: 40px;
+    }
+    /* #texte_article{
+        padding: 10px;
+    } */
+    aside img{
+        float: left;
+        width: 30%;
+        margin-right: 5px;
+    }
+    /* #texte_aside{
+        padding-left: 5px;
+    } */
+    body footer{ /* footer toujours visible*/
+        position: fixed;
+        bottom: 0;
+    }
+    
+}
+/* ******* 900 px *********/
+/* ******* 900 px *********/
+/* ******* 900 px **********/
+@media screen AND (min-width:900px) {
+    
+    #layout main{
+        display: flex;
+    } 
+    main article, main aside{      
+        background-color: rgb(250, 245, 245);
+        color:rgb(26, 25, 25);
+    }
+    main article{
+        width: 70%;
+        padding-top: 0;
+    }
+    article h2{
+        background-color:rgb(233, 66, 99) ;
+        color: rgb(250, 245, 245);
+        margin: 0 -5px 10px;
+        
+    }
+    main aside{
+        width:30%;
+        padding-top: 0;
+        /* clear: both; */
+    }
+    aside h2{
+        background-color:#e033b2;
+        color: rgb(250, 241, 248);
+        font-size: 1.5em;
+        margin: 0 -5px 10px;
+    }
+    #texte_aside img{
+        /* border:solid 2px red; */
+        float: none;
+        width: 100%;
+    }
+    aside img+p{
+        margin-top: 0;
+    }       
+}
+/* ******* 1200 px *********/
+/* ******* 1200 px *********/
+/* ******* 1200 px **********/
+@media screen AND (min-width:1000px) {
+    #layout{
+        background: rgb(250, 245, 245) center;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-left: 8px solid #e033b2;
+        border-right: 8px solid #e033b2;
+    }
+    header h1{
+        margin-top: 0;
+    }
+    body{
+        background: url(../img/floral-fond.jpg);
+        background-size: cover;
+        background-position: bottom ;
+    }
+    footer{
+        /* display: flex; */
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
